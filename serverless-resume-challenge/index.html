@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <script>
+            fetch('https://rh9ssfq3ia.execute-api.us-east-1.amazonaws.com/Prod/put')
+                .then(() => fetch('https://rh9ssfq3ia.execute-api.us-east-1.amazonaws.com/Prod/get'))
+                .then(response => response.json())
+                .then((data) => {
+                    document.getElementById('visitor#').innerText = data.count
+                })
+        </script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles.css" /> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <header class="header"><h1> Nour Abdel-Moneim</h1></header>
+    <body>
+        <div>
+            <p>Visitor #
+            <span id="visitor#" />
+        </p>
+    </div>
+        <div class="Contactinfo"> <!--contactinfo Start --> 
+            <div class="Mailinginfo"> 
+                <a href="#"> <i id="Mailicon" class="bx bxs-envelope"></i></a>
+                <p> abdelmoneimnour24@gmail.com </p> 
+            </div>
+            <div class="Phoneinfo"> 
+                <a href="#"> <i id="Phoneicon" class='bx bxs-phone'></i> </a>
+                <p> +1 (786) 440-3827 </p> 
+            </div>
+            <div class="Linkedininfo"> 
+                <a href="https://www.linkedin.com/in/nour-abdel-moneim-9b1a65210/" target="_blank"><i id="Linkedinicon" class='bx bxl-linkedin-square'></i> </a>
+                <p> https://www.linkedin.com/in/nour-abdel-moneim-9b1a65210/ </p> 
+            </div>
+        </div> <!--contactinfo END --> 
+    
+        <div class="Titlestab"> <!--Certificates Start-->
+            <h5 id="Titles"> Certificates </h5>
+                <ul id="certifcates">
+                    <li id="licertificates">AWS Cloud Practitioner</li>
+                     <a href="https://www.credly.com/badges/01961f71-e8ea-4e25-9b4e-334b284a0906/public_url" target="_blank"><i id="AWSlogo" class='bx bxl-aws'></i></a>
+                     <li id="licertificates">AWS Solutions Architect Associate</li>
+                     <a href="https://www.credly.com/badges/01961f71-e8ea-4e25-9b4e-334b284a0906/public_url" target="_blank"><i id="AWSlogo" class='bx bxl-aws'></i></a> 
+                       
+                </ul>     
+        </div> <!--Certificates End-->
+        <div class="Titlestab"> <!--Skills Start-->
+                <h5 id="Titles"> Skills </h5>
+                  
+                     
+                            <h7 id="EducationTitles">Linux OS</h7>
+                                <p id="Educationp">Troubleshooting Linux, Booting, Filesystems, TCP/IP networking, and command-line interface navigation</p>
+                     
+                      
+                            <h7 id="EducationTitles">AWS Cloud Computing</h7>
+                                <p id="Educationp">Knowledge of IAM Groups, Users, Roles, and Policies. Creating S3 buckets & deploying Static Websites. VPCs and Subnets. Launch, Configure, and Bootstrap EC2 instances. Deploy Load balancers & Auto scaling groups. Configure and deploy CloudFront distributions. Experience working with AWS Lambda and API Gateway to create serverless architectures and expose DynamoDB data via RESTful APIs..</p>
+                       
+                       
+                            <h7 id="EducationTitles">HTML & CSS</h7>
+                                <p id="Educationp">Basic Knowlege of Web development, Coding, Designing and Cross-platform testing.</p>
+
+                            <h7 id="EducationTitles">Python</h7>
+                                <p id="Educationp">Familiar with basic Python syntax and programming concepts. Have experience in writing simple scripts and programs using Python, and have knowledge of data types and basic data structures.</p>
+                        
+                  
+        </div> <!--Skills End-->
+        <div class="Titlestab"> <!--Education Start-->
+                <h5 id="Titles"> Education </h5>
+                            <h7 id="EducationTitles">Bachelors Degree in Cyber Security,</h7><p id="EducationSubtitles">Miami Dade College 04/2024 Miami, FL</p>
+                        
+                            <h7 id="EducationTitles">Enterprise Cloud Computing Certificate Program </h7>
+                                <p id="EducationSubtitles">Miami Dade College 08/2022 - 04/2023 Miami, FL</p>
+                                    <p id="Educationp">This program is developed to align with industry needs, preparing students to earn not only an academic credential, but also recognized industry certificates such as the AWS "Cloud Practitioner" and  "Solutions Architect" certifications, which prepares students to work in positions as Solution Architects, Cloud Engineers and Cloud Application Architects.</p>
+
+                                    <h7 id="EducationTitles">Associates Degree in Kinesiology,</h7><p id="EducationSubtitles">Orange Coast College 08/2019 Costa Mesa, CA</p>        
+        </div> <!--Education End-->
+         <div class="Titlestab"> <!--Professional exp Start-->
+                <h5 id="Titles"> Professional Experience </h5>
+                            <h7 id="EducationTitles">Real Estate Broker,</h7><p id="EducationSubtitles">Hotspot Realty LLC Miami, FL 10/2020 - present</p>
+                                <p id="Educationp">Advised clients about market conditions, conducted walkthroughs, and provide guidance and assistance through the process of buying, selling, or leasing properties, Earning 65% of business through referrals.</p>
+                        
+                            <h7 id="EducationTitles">Account Manager/Solutions Specialist</h7>
+                                <p id="EducationSubtitles">Premium Retail Irvine, CA 09/2018 - 08/2019</p>
+                                    <p id="Educationp">As an account manager I specialized in working and connecting with clients on a professional face to face level where I assisted in the purchase and deployment of their networking devices.</p>
+                            <h7 id="EducationTitles">Account Manager/Solutions Specialist</h7>
+                                <p id="EducationSubtitles">Cox Communications Irvine, CA 10/2017 - 09/2018</p>
+                                    <p id="Educationp">As an account manager I specialized in working and connecting with clients on a professional level, educating them on the list of services such as Cable, Internet and other networking tools that would best suit their needs while ensuring a smooth sales process.</p>
+        </div> <!--Professional exp END-->
+         <div class="Titlestab"> <!--Certificates Working Towards-->
+            <h5 id="Titles"> Certificates Working Towards </h5>
+                <ul id="licertificates">
+                    <li>CompTIA Linux+</li>
+                    <li>CompTIA Network+</li>
+                    <li>AWS Solutions Architect Associate<li>
+                </ul>     
+        </div> <!--Certificates Working Towards End-->
+                
+    </body>
+</html>

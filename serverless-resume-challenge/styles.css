@@ -1,0 +1,136 @@
+
+body {
+    padding-right: 10px;
+     padding-left: 10px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     margin: 0px;
+     font-family: 'Times New Roman', Times, serif;
+     width: 50%;
+     margin: auto;
+     box-shadow: 4px 10px 10px 4px black;
+}
+
+.header {
+    text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 8px;
+margin-top: 40px;
+}
+.Contactinfo {
+    margin-left: 50px;
+     margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+.Mailinginfo,.Phoneinfo,.Linkedininfo {
+    font-family: 'Times New Roman', Times, serif;
+font-size: 10px;
+display: flex;
+flex-direction: row;
+font-weight: bold;
+padding-top: 10px;
+text-decoration: none;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+p{ 
+    margin: 0px; 
+}
+
+i{
+  font-size: 12px;  
+  
+}
+#Mailicon{
+    color: #0072C6;
+}
+
+#Phoneicon{
+    color: #32C787;
+}
+#Linkedinicon {
+    color: #0077B5;
+}
+
+#Titles {
+    font-size: 16px;
+    margin-left: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+     border-bottom: 2px solid black;
+     padding-right: 10px;
+     padding-left: 10px;
+     padding-top: 5px;
+     align-items: center;
+}
+
+#licertificates {
+    font-family: 'Times New Roman', Times, serif;
+    overflow-wrap: break-word;
+    font-size: 10.0pt;
+    line-height: 18px;
+    list-style: none;
+}
+
+#certificatesdesign {
+    display: flex;
+    flex-direction: row;
+}
+
+#certslist {
+    padding: 0px;
+    flex-direction: row
+}
+#AWSlogo{
+    color: orange;
+    font-size:24px;
+    margin-left: 30px; 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#SkillsTitles {
+   display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    font-size: 10.5pt;
+    line-height: 18px;
+}
+
+#Skillsp{
+    font-family: 'Times New Roman', Times, serif;
+    white-space: inherit;
+    font-size: 10.5pt;
+    
+    
+}
+
+#EducationTitles {
+     font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+    padding-top: 7px;
+}
+#EducationSubtitles {
+     font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+    margin-left: 35px;
+}
+#Educationp {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 35px;
+    padding-bottom: 10px;
+}
