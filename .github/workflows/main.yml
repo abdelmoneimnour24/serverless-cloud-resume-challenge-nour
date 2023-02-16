@@ -1,0 +1,22 @@
+name: main
+on: push
+env:
+  GO_VERSION: 1.16
+
+jobs:
+  test-fucntions:
+    runs-on: macos-latest 
+    timeout-minutes: 2
+    steps: 
+      - uses: actions/checkout@v2 #checksout the repository we are working in
+      - uses: actions/setup-go@v2.1.3 #sets up GO
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: test get-function
+        run: cd serverless-cloud-resume-challenge-nour/get-function && go test -v ./ && cd ../ ../ #CDs in get-function folder and runs the test then gets out
+      - name: test put-function
+        run: cd serverless-cloud-resume-challenge-nour/put -function && go test -v ./ && cd ../ ../ #CDs in put-function folder and runs the test then gets out
+    
+    
+    
+  
