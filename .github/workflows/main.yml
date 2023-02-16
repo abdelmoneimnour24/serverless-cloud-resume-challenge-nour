@@ -15,7 +15,7 @@ jobs:
       - name: test get-function
         run: cd serverless-resume-challenge/get-function && go test -v ./ && cd ../ ../ #CDs in get-function folder and runs the test then gets out
       - name: test put-function
-        run: cd serverless-resume-challenge/put -function && go test -v ./ && cd ../ ../ #CDs in put-function folder and runs the test then gets out
+        run: cd serverless-resume-challenge/put-function && go test -v ./ && cd ../ ../ #CDs in put-function folder and runs the test then gets out
     
     
     
