@@ -68,4 +68,4 @@ Resources:
       AccessControl:
       WebsiteConfiguration:
         IndexDocument: index.html
-      BucketName: nour-crproject-console
+      BucketName: nour-crproject
