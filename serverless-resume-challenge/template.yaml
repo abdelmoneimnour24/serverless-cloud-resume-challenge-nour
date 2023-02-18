@@ -60,3 +60,11 @@ Resources:
           Properties:
             Path: /put
             Method: GET
+   
+   MyWebsite:
+    Type: AWS::S3::Bucket
+    Properties: 
+      AccessControl:
+      WebsiteConfiguration:
+        IndexDocument: index.html
+      BucketName: nour-crproject
