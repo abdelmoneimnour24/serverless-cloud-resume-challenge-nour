@@ -16,4 +16,25 @@ jobs:
         run: cd serverless-resume-challenge/get-function && go test -v ./ && cd ../ ../ #CDs in get-function folder and runs the test then gets out
       - name: test put-function
         run: cd serverless-resume-challenge/put-function && go test -v ./ && cd ../ ../ #CDs in put-function folder and runs the test then gets out
+        
+
+  build-and-deploy-SAM:
+    needs: test-fucntions
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: aws-actions/setup-sam@v1
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ID }}
+          aws-region: us-east-1
+      - run: sam build
+        working-directory: serverless-resume-challenge
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
+        working-directory: serverless-resume-challenge
+          
+      
+    
     
