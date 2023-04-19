@@ -34,6 +34,21 @@ jobs:
         working-directory: serverless-resume-challenge
       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
         working-directory: serverless-resume-challenge
+        
+  deploy-frontend:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --delete
+        env:
+          AWS_S3_BUCKET: nour-crc
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SOURCE_DIR: serverless-cloud-resume-challenge-nour/serverless-resume-challenge/index.html
+          
+      
           
       
     
