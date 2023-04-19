@@ -36,7 +36,7 @@ jobs:
         working-directory: serverless-resume-challenge
         
   deploy-frontend:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: jakejarvis/s3-sync-action@master
