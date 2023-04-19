@@ -60,12 +60,3 @@ Resources:
           Properties:
             Path: /put
             Method: GET
-         
-   
-  MyBucket:
-    Type: AWS::S3::Bucket
-    Properties: 
-      AccessControl: Private
-      WebsiteConfiguration:
-        IndexDocument: index.html
-      BucketName: nour-crc
