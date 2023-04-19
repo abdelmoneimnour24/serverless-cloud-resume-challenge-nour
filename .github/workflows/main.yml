@@ -44,8 +44,8 @@ jobs:
           args: --delete
         env:
           AWS_S3_BUCKET: nour-crc
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY_ID }}
           SOURCE_DIR: serverless-cloud-resume-challenge-nour/serverless-resume-challenge/index.html
           
       
