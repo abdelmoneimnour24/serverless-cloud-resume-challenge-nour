@@ -115,7 +115,7 @@ canvas#matrix-canvas {
     z-index: -1;
   }
 #profile-image {
-    width: 100px;   /* Diameter of the circle */
+    width: 101px;   /* Diameter of the circle */
     height: 100px;  /* Diameter of the circle */
     object-fit: cover;  /* This will crop the image to fit the container, preserving its aspect ratio */
     float: right;   /* Keeps it on the right side */
